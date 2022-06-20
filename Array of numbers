@@ -1,11 +1,14 @@
 function calculateCountOfDeviders(array $data): int
 {
     return array_reduce($data, function ($result, $value) {
-        if (!is_int($value) && !is_float($value)) {
-            throw new \InvalidArgumentException('calculateCountOfDeviders function only accepts numbers. Input was: ' . $value);
+        if (!is_int($value) && !is_float($value))       // check if it is an integer and is not decimal
+        
+        {
+            throw new \InvalidArgumentException('calculateCountOfDeviders function only accepts numbers. Input was: ' . $value);  // throw exception 
         }
         
-        if (fmod($value, 4) == 0 || fmod($value, 6) == 0) {
+        if (fmod($value, 4) == 0 || fmod($value, 6) == 0)     // check the result of devision
+        {     
             $result++;
         }
         
