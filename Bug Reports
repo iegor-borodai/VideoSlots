@@ -1,0 +1,30 @@
+BUG 1
+
+Title: Indirect match search suggestions
+Priority: medium
+Severity: critical
+Env: Windows 10, Chrome 102
+
+Steps to reproduce
+     1. Open the homepage
+     2. type in "lucky " in search box ("search_str")
+
+Expected Result
+2 results are displayed (doggone lucky; lucky legend)
+
+Actual Result
+1 result is displayed (lucky legend)
+
+Additional info:
+2 results are displayed (doggone lucky; lucky legend) for just "lucky" search
+\\users may have problems finding favorite games, need further and deep investigation of the search engine
+
+BUG 2
+Title:
+Priority:
+Severity:
+Env:
+Steps to reproduce
+Expected Result
+Actual Result
+Additional info:
