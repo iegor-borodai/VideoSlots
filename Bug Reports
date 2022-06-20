@@ -1,8 +1,48 @@
 BUG 1
+Title: 380 Ukraine default phone prefix but it is not selectable at account registration
+Priority: high
+Severity: critical
+Env: Windows 10, Chrome 102
 
+Steps to reproduce
+     1. Open the homepage
+     2. Press the "Open account"
+     3. Select Ukraine from the list
+
+Expected Result
+Ukraine is in the list to match default "380" phone prefix
+
+Actual Result
+Ukraine is NOT in the list
+
+Additional info:
+Ukraine is still available at "Have Us Call You" section
+
+BUG 2
+Title: Cannot log in from differant than account's registration location 
+Priority: high
+Severity: critical
+Env: Windows 10, Chrome 102
+Pre-conditions: register the account from Croatia; current location is Ukraine
+
+Steps to reproduce
+     1. Open the homepage
+     2. Press the "Log in"
+     3. Authorize with credentials from Croatia's account
+
+Expected Result
+authorization is successfull
+
+Actual Result
+authorization is failed. account block short message
+
+Additional info:
+investigation is needed
+
+BUG 3
 Title: Indirect match search suggestions
 Priority: medium
-Severity: critical
+Severity: major
 Env: Windows 10, Chrome 102
 
 Steps to reproduce
@@ -18,13 +58,3 @@ Actual Result
 Additional info:
 2 results are displayed (doggone lucky; lucky legend) for just "lucky" search
 \\users may have problems finding favorite games, need further and deep investigation of the search engine
-
-BUG 2
-Title:
-Priority:
-Severity:
-Env:
-Steps to reproduce
-Expected Result
-Actual Result
-Additional info:
