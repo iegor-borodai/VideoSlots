@@ -1,0 +1,19 @@
+Story: Array of numbers
+
+As a product owner
+In order to verify the set of numbers
+I want to find out if the numbers can be divided by 4,6 and 24.
+
+Scenario 1: Positive functional check
+Given the array contains at least 4 values: one number that can be divided by 4, by 6, by 24 and one that cannot be divided by 4 and 6 (ex:8,18,24,7)
+And these numbers in array are given for the input
+When the function processed the array
+Then the function reply the number of elements and its values according to the division categories  
+(divided by 4: 4,24; divided by 6: 18,24; divided by 24:24; not divided:7)
+
+Scenario 2: Negative functional check
+Given the array contains at least 6 values: one number which is negative, one is zero, one is missed, one is a letter, one is a special symbol, one is a fractional number (ex: -45, 0, , a, @, 0.26)And I have two blue garments in stock
+And these numbers in array are given for the input
+When the function processed the array
+Then the function reply with the error
+And the 
