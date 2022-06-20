@@ -1,0 +1,7 @@
+function isStringPalindrome(string $data): bool
+{
+    $data = strtolower($data);
+    
+    return $data === strrev($data);
+    
+}
