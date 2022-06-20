@@ -1,0 +1,16 @@
+function calculateCountOfDeviders(array $data): int
+{
+    return array_reduce($data, function ($result, $value) {
+        if (!is_int($value) && !is_float($value)) {
+            throw new \InvalidArgumentException('calculateCountOfDeviders function only accepts numbers. Input was: ' . $value);
+        }
+        
+        if (fmod($value, 4) == 0 || fmod($value, 6) == 0) {
+            $result++;
+        }
+        
+        return $result;
+        
+    }, $result = 0);
+    
+}
