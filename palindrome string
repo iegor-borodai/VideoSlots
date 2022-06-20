@@ -1,7 +1,7 @@
 function isStringPalindrome(string $data): bool
 {
-    $data = strtolower($data);
+    $data = strtolower($data);   // get the low register
     
-    return $data === strrev($data);
+    return $data === strrev($data);  // compare with the reversed string
     
 }
